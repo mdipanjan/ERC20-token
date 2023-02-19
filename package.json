@@ -1,0 +1,33 @@
+{
+  "name": "walle-contract",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "^1.0.6",
+    "@nomicfoundation/hardhat-toolbox": "^2.0.1",
+    "@nomiclabs/hardhat-ethers": "^2.2.2",
+    "@nomiclabs/hardhat-etherscan": "^3.1.5",
+    "dotenv": "^16.0.3",
+    "ethers": "^5.7.2",
+    "hardhat": "^2.11.2",
+    "hardhat-deploy": "^0.11.22",
+    "hardhat-gas-reporter": "^1.0.9",
+    "prettier-plugin-solidity": "^1.1.1"
+  },
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "test": "npx hardhat test",
+    "test-staging": "npx hardhat test --network goerli",
+    "lint": "npx solhint 'contracts/*.sol'",
+    "lint:fix": "npx solhint 'contracts/**/*.sol' --fix",
+    "format": "npx prettier --write .",
+    "coverage": "npx hardhat coverage",
+    "typechain": "npx hardhat typechain"
+  },
+  "author": "mdipanjan",
+  "license": "ISC",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.8.1"
+  }
+}
